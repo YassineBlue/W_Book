@@ -1,0 +1,351 @@
+:root {
+    --primary-color: #a97838;
+    --bg-color-dark: #121212;
+    --bg-card: #1a1a1a;
+    --sidebar-width: 80px;
+}
+
+
+body {
+    background-color: var(--bg-color-dark);
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+/* logo  */
+.sidebar-logo {
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: var(--primary-color);
+    padding: 10px 0 20px 0;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid rgba(169, 120, 56, 0.15);
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px rgba(169, 120, 56, 0.25);
+    user-select: none;
+}
+.sidebar-logo::after{
+    content:"";
+    position:absolute;
+    bottom: 0;
+    left: -10px;
+    background: var(--primary-color);
+    height: 2px;
+    width: 0;
+    transition: .3s ease-in-out;
+}
+.sidebar-logo:hover::after {
+   width: 150%;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: var(--sidebar-width);
+    background-color: #1a1a1a;
+    border-right: 1px solid rgba(169, 120, 56, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    padding: 20px 0;
+    z-index: 1030;
+}
+.side_icons{
+    display: flex;
+    flex-direction:column ;
+    height: 100%;
+    justify-content: space-between;
+}
+.icon-box {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.3rem;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.sidebar a.icon-box:first-child {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.icon-box-utility {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.icon-box:hover {
+    color: var(--primary-color);
+    background-color: rgba(169, 120, 56, 0.1);
+}
+
+
+.main {
+    margin-left: var(--sidebar-width);
+    padding: 2rem;
+    min-height: 100vh;   /* IMPORTANT */
+    height: auto;        /* REMOVE fixed height */
+    overflow-x: hidden;
+}
+
+
+.search-input {
+    background-color: #1a1a1a;
+    border: 1px solid rgba(255,255,255,0.1);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.search-input:focus {
+    border-color: var(--primary-color);
+}
+
+
+.action-btn {
+    background-color: var(--primary-color);
+    color: #121212;
+    border: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.action-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+
+.book-card {
+    transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.35s cubic-bezier(0.25, 1, 0.5, 1) !important;
+    will-change: transform, box-shadow;
+    border: 1px solid rgba(255, 255, 255, 0.03) !important;
+}
+
+.book-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5), 0 0 20px rgba(169, 120, 56, 0.25) !important;
+}
+
+.book-card .card-img-container img {
+    transition: transform 0.35s ease;
+}
+
+.book-card:hover .card-img-container img {
+    transform: scale(1.04);
+}
+
+
+
+body.light-theme,
+body.light-theme .main,
+body.light-theme .sticky-top {
+    background-color: #fcfbfa !important;
+    color: #2b2520 !important;
+}
+
+body.light-theme .sidebar {
+    background-color: #ffffff !important;
+    border-right: 1px solid rgba(169, 120, 56, 0.15) !important;
+}
+
+body.light-theme .sidebar .icon-box i {
+    color: #8c622d !important;
+}
+
+body.light-theme .main .container-fluid.py-5 {
+    background: linear-gradient(135deg, #f5f0eb 0%, #e8ded4 100%) !important;
+    border: 1px solid rgba(169, 120, 56, 0.3) !important;
+}
+body.light-theme .main .container-fluid.py-5 h1 {
+    color: #8c622d !important;
+}
+body.light-theme .main .container-fluid.py-5 p {
+    color: #5c534c !important;
+}
+
+
+body.light-theme .search-input,
+body.light-theme #genre-filter {
+    background-color: #ffffff !important;
+    color: #2b2520 !important;
+    border: 1px solid rgba(169, 120, 56, 0.4) !important;
+}
+
+/* Product Cards */
+body.light-theme #products-container .card, 
+body.light-theme [id^="product-card"] {
+    background-color: #ffffff !important;
+    border: 1px solid rgba(169, 120, 56, 0.2) !important;
+    box-shadow: 0 4px 15px rgba(169, 120, 56, 0.05) !important;
+}
+
+body.light-theme #products-container .card h5,
+body.light-theme #products-container .card p {
+    color: #2b2520 !important;
+}
+
+
+body.light-theme .modal-content {
+    background-color: #ffffff !important;
+    color: #2b2520 !important;
+    border: 1px solid rgba(169, 120, 56, 0.3) !important;
+}
+body.light-theme .modal-content .modal-header {
+    border-bottom: 1px solid rgba(169, 120, 56, 0.2) !important;
+}
+body.light-theme .modal-content .btn-close {
+    filter: invert(1) grayscale(1) brightness(0);
+}
+body.light-theme #btn-light-mode {
+    border-color: #a97838 !important;
+    color: #a97838 !important;
+    background-color: rgba(169, 120, 56, 0.05);
+}
+
+/*for cart tablee*/
+.main table.table {
+    color: #ffffff !important;
+    background-color: #1a1a1a !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+.main table.table th {
+    background-color: #242424 !important;
+    color: #a97838 !important;
+}
+.main table.table td {
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+}
+
+
+body.light-theme .main table.table {
+    color: #2b2520 !important;
+    background-color: #ffffff !important;
+    border-color: rgba(169, 120, 56, 0.2) !important;
+}
+
+body.light-theme .main table.table th {
+    background-color: #f5f0eb !important;
+    color: #8c622d !important;
+    border-bottom: 2px solid rgba(169, 120, 56, 0.3) !important;
+}
+
+body.light-theme .main table.table td {
+    background-color: #ffffff !important;
+    color: #2b2520 !important;
+    border-bottom: 1px solid rgba(169, 120, 56, 0.1) !important;
+}
+
+
+body.light-theme .table-hover > tbody > tr:hover > * {
+    background-color: #fdfbf7 !important; 
+    box-shadow: inset 0 0 0 9999px rgba(169, 120, 56, 0.03) !important;
+}
+
+body.light-theme .cart-empty-msg {
+    color: #8c622d !important;
+    opacity: 0.7;
+}
+/* footer */
+.footer-divider {
+    border-color: rgba(169, 120, 56, 0.2);
+}
+
+.footer-section {
+    background-color: #1a1a1a;
+    border: 1px solid rgba(169, 120, 56, 0.15);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.footer-title {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.socials a {
+    color: rgba(255,255,255,0.7);
+    font-size: 1.2rem;
+    transition: 0.2s;
+}
+
+.socials a:hover,
+#navLinks a:hover {
+    color: var(--primary-color);
+}
+
+#navLinks a {
+    text-decoration: none;
+    color: rgba(255,255,255,0.7);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(169, 120, 56, 0.15);
+    color: rgba(255,255,255,0.6);
+}
+/* footer modes  */
+body.light-theme .footer-section {
+    background-color: #ffffff !important;
+    border: 1px solid rgba(169, 120, 56, 0.25) !important;
+}
+
+/* Main footer text blocks */
+body.light-theme .footer-section p,
+body.light-theme .footer-section span,
+body.light-theme .footer-section h3 {
+    color: #2b2520 !important;
+    opacity: 0.95;
+}
+
+/* Social icons */
+body.light-theme .footer-section .socials a {
+    color: #2b2520 !important;
+    opacity: 0.85;
+}
+
+body.light-theme .footer-section .socials a:hover {
+    color: var(--primary-color) !important;
+    opacity: 1;
+}
+
+/* Navigation links in footer */
+body.light-theme #navLinks a {
+    color: #2b2520 !important;
+    opacity: 0.85;
+}
+
+body.light-theme #navLinks a:hover {
+    color: var(--primary-color) !important;
+    opacity: 1;
+}
+
+/* Bottom copyright bar */
+body.light-theme .footer-bottom {
+    background-color: #ffffff !important;
+    color: #2b2520 !important;
+    border-top: 1px solid rgba(169, 120, 56, 0.25) !important;
+}
+
+/* Make sure inner spans are also readable */
+body.light-theme .footer-bottom span {
+    color: #2b2520 !important;
+    opacity: 0.9;
+}
