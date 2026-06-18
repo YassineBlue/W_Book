@@ -1,4 +1,7 @@
 WBook
+## Live Demo
+https://yassineblue.github.io/Book_store/WBook
+
 This is a simple book store web project built using HTML, CSS, JavaScript, and Bootstrap.
 
 The idea is to let users browse books, filter by categories, and use a roulette feature that randomly suggests a book. All data is handled locally using a JSON file, with no backend involved.
