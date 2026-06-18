@@ -1,0 +1,184 @@
+[
+  {
+    "id" : "013",
+    "name": "Atomic Habits",
+    "author": "James Clear",
+    "price": 13.99,
+    "genre": "Self-Help",
+    "page_count": 320,
+    "cover": "https://covers.openlibrary.org/b/title/Atomic%20Habits-L.jpg"
+  },
+  {
+    "id" : "001",
+    "name": "Dune",
+    "author": "Frank Herbert",
+    "price": 9.99,
+    "genre": "Science Fiction",
+    "page_count": 412,
+    "cover": "https://covers.openlibrary.org/b/title/Dune-L.jpg"
+  },
+  {
+    "id" : "004",
+    "name": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "price": 10.99,
+    "genre": "Fantasy",
+    "page_count": 310,
+    "cover": "https://covers.openlibrary.org/b/title/The%20Hobbit-L.jpg"
+  },
+  {
+    "id" : "002",
+    "name": "1984",
+    "author": "George Orwell",
+    "price": 8.99,
+    "genre": "Dystopian",
+    "page_count": 328,
+    "cover": "https://covers.openlibrary.org/b/title/1984-L.jpg"
+  },
+  {
+    "id" : "015",
+    "name": "The Alchemist",
+    "author": "Paulo Coelho",
+    "price": 9.99,
+    "genre": "Philosophical Fiction",
+    "page_count": 208,
+    "cover": "https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg"
+  },
+  {
+    "id" : "018",
+    "name": "The Martian",
+    "author": "Andy Weir",
+    "price": 12.50,
+    "genre": "Science Fiction",
+    "page_count": 369,
+    "cover": "https://covers.openlibrary.org/b/title/The%20Martian-L.jpg"
+  },
+  {
+    "id" : "003",
+    "name": "Brave New World",
+    "author": "Aldous Huxley",
+    "price": 9.49,
+    "genre": "Dystopian",
+    "page_count": 288,
+    "cover": "https://covers.openlibrary.org/b/title/Brave%20New%20World-L.jpg"
+  },
+  
+  {
+    "id" : "005",
+    "name": "The Fellowship of the Ring",
+    "author": "J.R.R. Tolkien",
+    "price": 11.99,
+    "genre": "Fantasy",
+    "page_count": 423,
+    "cover": "https://covers.openlibrary.org/b/title/The%20Fellowship%20of%20the%20Ring-L.jpg"
+  },
+  {
+    "id" : "006",
+    "name": "Sherlock Holmes",
+    "author": "Arthur Conan Doyle",
+    "price": 7.99,
+    "genre": "Mystery",
+    "page_count": 220,
+    "cover": "https://covers.openlibrary.org/b/title/Sherlock%20Holmes-L.jpg"
+  },
+  {
+    "id" : "007",
+    "name": "The Da Vinci Code",
+    "author": "Dan Brown",
+    "price": 10.50,
+    "genre": "Thriller",
+    "page_count": 489,
+    "cover": "https://covers.openlibrary.org/b/title/The%20Da%20Vinci%20Code-L.jpg"
+  },
+  {
+    "id" : "008",
+    "name": "Sapiens",
+    "author": "Yuval Noah Harari",
+    "price": 14.99,
+    "genre": "History",
+    "page_count": 498,
+    "cover": "https://covers.openlibrary.org/b/title/Sapiens-L.jpg"
+  },
+  {
+    "id" : "009",
+    "name": "Homo Deus",
+    "author": "Yuval Noah Harari",
+    "price": 15.99,
+    "genre": "History / Philosophy",
+    "page_count": 450,
+    "cover": "https://covers.openlibrary.org/b/title/Homo%20Deus-L.jpg"
+  },
+  {
+    "id" : "010",
+    "name": "A Brief History of Time",
+    "author": "Stephen Hawking",
+    "price": 12.99,
+    "genre": "Science",
+    "page_count": 256,
+    "cover": "https://covers.openlibrary.org/b/title/A%20Brief%20History%20of%20Time-L.jpg"
+  },
+  {
+    "id" : "011",
+    "name": "Clean Code",
+    "author": "Robert C. Martin",
+    "price": 32.99,
+    "genre": "Programming",
+    "page_count": 464,
+    "cover": "https://covers.openlibrary.org/b/title/Clean%20Code-L.jpg"
+  },
+  {
+    "id" : "012",
+    "name": "Introduction to Algorithms",
+    "author": "Thomas H. Cormen",
+    "price": 89.99,
+    "genre": "Computer Science",
+    "page_count": 1312,
+    "cover": "https://covers.openlibrary.org/b/title/Introduction%20to%20Algorithms-L.jpg"
+  },
+  {
+    "id" : "014",
+    "name": "Deep Work",
+    "author": "Cal Newport",
+    "price": 14.50,
+    "genre": "Productivity",
+    "page_count": 304,
+    "cover": "https://covers.openlibrary.org/b/isbn/9781455586691-L.jpg"
+  },
+  {
+    "id" : "016",
+    "name": "Educated",
+    "author": "Tara Westover",
+    "price": 13.99,
+    "genre": "Biography",
+    "page_count": 352,
+    "cover": "https://covers.openlibrary.org/b/title/Educated-L.jpg"
+  },
+  {
+    "id" : "017",
+    "name": "Steve Jobs",
+    "author": "Walter Isaacson",
+    "price": 16.99,
+    "genre": "Biography",
+    "page_count": 656,
+    "cover": "https://covers.openlibrary.org/b/title/Steve%20Jobs-L.jpg"
+  },
+  
+  {
+    "id" : "019",
+    "name": "Project Hail Mary",
+    "author": "Andy Weir",
+    "price": 13.50,
+    "genre": "Science Fiction",
+    "page_count": 496,
+    "cover": "https://covers.openlibrary.org/b/title/Project%20Hail%20Mary-L.jpg"
+  },
+  {
+    "id" : "020",
+    "name": "The Name of the Wind",
+    "author": "Patrick Rothfuss",
+    "price": 12.99,
+    "genre": "Fantasy",
+    "page_count": 662,
+    "cover": "https://covers.openlibrary.org/b/title/The%20Name%20of%20the%20Wind-L.jpg"
+  }
+]
