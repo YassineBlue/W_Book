@@ -1,6 +1,6 @@
 WBook
 ## Live Demo
-https://yassineblue.github.io/Book_store/WBook
+https://yassineblue.github.io/Book_store/
 
 This is a simple book store web project built using HTML, CSS, JavaScript, and Bootstrap.
 
